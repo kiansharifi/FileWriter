@@ -26,4 +26,19 @@ public class FileWriter
         printer.close ();
     }
 
+    //counts chars in a given file
+    public static int charCounter(String fileName) throws IOException
+    {
+        int charCounter = 0;
+        BufferedReader breader = new BufferedReader(new FileReader(fileName));
+        while(breader.ready())
+        {
+            charCounter++;
+            breader.read();
+        }
+        breader.close();
+        return charCounter;
+    }
+    //add a call to this function in the tester
+
 }

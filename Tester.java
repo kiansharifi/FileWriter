@@ -7,6 +7,7 @@ public class Tester
         System.out.println (FileWriter.reader ("codeFile"));
         FileWriter.writer ("pleasework", "codeFile");
         System.out.println (FileWriter.reader ("codeFile"));
+        System.out.println(FileWriter.charCounter("codeFile"));
 
     }
 }
